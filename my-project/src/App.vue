@@ -1,6 +1,24 @@
 <template>
 	<div id="app">
 		<h1>{{msg}}</h1>
+		<login></login>
+		<login></login>
+		<login></login>
+		<login></login>
+		<el-row>
+			<el-button>moren</el-button>
+			<el-button type="primary">主要按钮</el-button>
+			<el-button type="success">主要按钮</el-button>
+			<el-button type="info">主要按钮</el-button>
+			<el-button type="danger">主要按钮</el-button>
+		</el-row>
+		<el-row>
+			<el-button plain disabled>pusuanniu</el-button>
+			<el-button type="primary" icon="el-icon-edit"></el-button>
+			<el-button type="warning" icon="el-icon-search">搜索</el-button>
+			<el-button type="danger" :loading="true">拉屎中</el-button>
+			<el-button type="primary" :loading="false">拉屎已完成</el-button>
+		</el-row>
 		<home id="home"></home>
 		<hr>
 		<list id="list"></list>
@@ -22,6 +40,9 @@ export default {
 		list
 	},
 	methods:{
+		show(){
+			alert('lashi')
+		}
 	}
 }
 </script>
